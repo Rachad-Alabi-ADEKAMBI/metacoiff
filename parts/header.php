@@ -14,23 +14,20 @@
 
             <ul class='menu'>
                 <li>
-                    <a href="index.html">Notre centre</a>
+                    <a href="index.php">Accueil</a>
                 </li>
 
                 <li>
-                    <a href="specialites.html">Nos spécialités</a>
+                    <a href="index.php#specialites">Nos spécialités</a>
                 </li>
 
                 <li>
-                    <a href="blog.html">Blog</a>
+                    <a href="index.php#blog">Blog</a>
                 </li>
 
-                <li>
-                    <a href="avis.html">Avis</a>
-                </li>
 
                 <li>
-                    <a href="contact.html">
+                    <a href="contact.php">
                         Contact
                     </a>
                 </li>
@@ -45,15 +42,7 @@
                 <div class="adress-box">
                     Paris 11 <br>
                     <strong><i class="far fa-calendar"></i> 01 36 78 94 25 |</strong> <br>
-                    <a href="contact.html">Prendre Rdv</a>
-
-                </div>
-
-                <div class="adress-box">
-                    Paris 11 <br>
-                    <span><i class="far fa-calendar"></i> 01 36 78 94 25<br></span>
-                    <a href="contact.html">Prendre Rdv</a>
-
+                    <a href="booking.php" class="btn btn-success">Prendre Rdv</a>
                 </div>
 
 
@@ -61,44 +50,7 @@
         </div>
     </div>
 
-    <div class="header__list" id='header__list'>
-        <ul>
-            <li>
-                <a href="index.html">Notrcentre</a>
-            </li>
 
-            <li>
-                <a href="specialites.html">Nos specialites</a>
-            </li>
-
-            <li>
-                <a href="blog.html">Blog</a>
-            </li>
-
-            <li>
-                <a href="avis.html">
-                    Avis
-                </a>
-            </li>
-
-            <li>
-                <a href="contact.html">
-                    Contact
-                </a>
-            </li>
-            <li>
-                <a href="avis.html">
-                    Réservation
-                </a>
-            </li>
-
-            <li>
-                <a href="contact.html">
-                    Connexion
-                </a>
-            </li>
-        </ul>
-    </div>
 
 
 </header>

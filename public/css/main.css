@@ -357,7 +357,7 @@ section .content p {
   margin: 0;
   margin: 0;
   padding-top: 10px;
-  background-image: url("../images/pexels-samad-ismayilov-735552.jpg");
+  background-image: url("../images/image1.jpg");
 }
 .hero__main {
   float: right;
@@ -659,7 +659,7 @@ section .content p {
 .testimonies__list .testimony {
   display: block;
   margin: 15px;
-  width: 260px;
+  width: 330px;
   padding: 15px;
   height: auto;
   border-radius: 15px;
@@ -1864,11 +1864,12 @@ section .content p {
 .footer {
   background-color: #3c3e3e;
   position: absolute;
-  height: 100px;
+  height: 110px;
   width: 100%;
   text-align: center;
   bottom: 0;
   display: block;
+  display: none;
   margin: 30px auto 0 auto;
 }
 .footer__content {
@@ -1980,7 +1981,7 @@ section .content p {
     height: auto;
   }
   .container .testimonies__list .testimony {
-    width: 220px;
+    width: 280px;
   }
   .container .blog .cards {
     width: 90%;

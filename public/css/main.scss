@@ -447,8 +447,7 @@ p{
         @include hero();
         margin: 0;
         padding-top: 10px;
-        background-image: url('../images/pexels-samad-ismayilov-735552.jpg');
-
+        background-image: url('../images/image1.jpg');
 
         &__main{
             float: right;
@@ -759,7 +758,7 @@ p{
             .testimony{
                 display: block;
                 margin: 15px;
-                width: 260px;
+                width: 330px;
                 padding: 15px;
                 height: auto;
                 @include image();
@@ -1910,11 +1909,12 @@ p{
     .footer{
         background-color: $black-text;;
         position: absolute;
-        height: 100px;
+        height: 110px;
         width: 100%;
         text-align: center;
         bottom: 0;
         display: block;
+        display: none;
         margin: 30px auto 0 auto ;
 
         &__content{
@@ -2061,7 +2061,7 @@ p{
                 height: auto;
 
                 .testimony{
-                    width: 220px;
+                    width: 280px;
                 }
             }
         }
