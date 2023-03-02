@@ -2,7 +2,6 @@
     <div class="header__top">
         <p class="adress-top">
             <a href=""><i class='fas fa-map-marker-alt'></i> Nous trouver sur la carte</a>
-            <a href=""> <i class="far fa-star"></i> Avis certifies</a>
         </p>
     </div>
 
@@ -15,6 +14,10 @@
             <ul class='menu'>
                 <li>
                     <a href="index.php">Accueil</a>
+                </li>
+
+                <li>
+                    <a href="dashboard.php">Tableau de board</a>
                 </li>
 
                 <li>
