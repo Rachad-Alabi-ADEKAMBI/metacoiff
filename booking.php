@@ -31,15 +31,15 @@
                         </li>
 
                         <li>
-                            <button class="btn btn-primary" @click="displayBarber()">
+                            <button class="btn btn-primary" @click="displayBarbers()">
                                 Coiffeur
                             </button>
                         </li>
 
                         <li>
-                            <a class="btn btn-primary">
+                            <button class="btn btn-primary" @click="displaySummary()">
                                 Récapitulatif
-                            </a>
+                            </button>
                         </li>
                     </ul>
                 </div>
@@ -100,40 +100,40 @@
                         <div class="row mx-auto text-center">
                             <div class="col-sm-12 col-md-8 mx-auto">
                                 <div class="times">
-                                    <div class="time">
+                                    <div class="time" @click='displayBarbers()'>
                                         08:00
                                     </div>
 
-                                    <div class="time">
+                                    <div class="time" @click='displayBarbers()'>
                                         08:30
                                     </div>
 
-                                    <div class="time">
+                                    <div class="time" @click='displayBarbers()'>
                                         09:00
                                     </div>
 
-                                    <div class="time">
+                                    <div class="time" @click='displayBarbers()'>
                                         09:30
                                     </div>
 
-                                    <div class="time">
+                                    <div class="time" @click='displayBarbers()'>
                                         10:00
                                     </div>
 
-                                    <div class="time">
+                                    <div class="time" @click='displayBarbers()'>
                                         10:30
                                     </div>
-                                    <div class="time">
+                                    <div class="time" @click='displayBarbers()'>
                                         11:00
                                     </div>
-                                    <div class="time">
+                                    <div class="time" @click='displayBarbers()'>
                                         11:30
                                     </div>
-                                    <div class="time">
+                                    <div class="time" @click='displayBarbers()'>
                                         12:00
                                     </div>
 
-                                    <div class="time">
+                                    <div class="time" @click='displayBarbers()'>
                                         12:30
                                     </div>
                                 </div>
@@ -141,40 +141,40 @@
                                 <hr>
 
                                 <div class="times">
-                                    <div class="time">
+                                    <div class="time" @click='displayBarbers()'>
                                         14:00
                                     </div>
 
-                                    <div class="time">
+                                    <div class="time" @click='displayBarbers()'>
                                         14:30
                                     </div>
 
-                                    <div class="time">
+                                    <div class="time" @click='displayBarbers()'>
                                         15:00
                                     </div>
 
-                                    <div class="time">
+                                    <div class="time" @click='displayBarbers()'>
                                         15:30
                                     </div>
 
-                                    <div class="time">
+                                    <div class="time" @click='displayBarbers()'>
                                         16:00
                                     </div>
 
-                                    <div class="time">
+                                    <div class="time" @click='displayBarbers()'>
                                         16:30
                                     </div>
-                                    <div class="time">
+                                    <div class="time" @click='displayBarbers()'>
                                         17:00
                                     </div>
-                                    <div class="time">
+                                    <div class="time" @click='displayBarbers()'>
                                         17:30
                                     </div>
-                                    <div class="time">
+                                    <div class="time" @click='displayBarbers()'>
                                         18:00
                                     </div>
 
-                                    <div class="time">
+                                    <div class="time" @click='displayBarbers()'>
                                         18:30
                                     </div>
                                 </div>
@@ -190,7 +190,8 @@
                         <div class="row">
                             <div class="col-sm-12 col-md-8 mx-auto">
                                 <div class="barbers">
-                                    <div class="barber" v-for='detail in barbers' :key='detail.id'>
+                                    <div class="barber" v-for='detail in barbers' :key='detail.id'
+                                        @click='displaySummary(detail.id)'>
                                         <img :src="getImgUrl(detail.image)" alt="">
                                         <h4>
                                             {{detail.name}}
@@ -208,9 +209,28 @@
 
                         <div class="row">
                             <div class="col-sm-12 col-md-8 mx-auto">
-                                <card class="summary">
+                                <div class="card">
+                                    <div class="card">
+                                        <img class="text-center mx-auto mt-2"
+                                            src="public/images/andre-reis-z0Cyh9nGLFY-unsplash.jpg" alt="Card image cap"
+                                            width='100' height='60'>
+                                        <div class="card-body">
+                                            <h5 class="card-title">Coupe simple</h5>
+                                            <p class="card-text"> 20eur 30 min</p>
+                                            <p class="card-text"> Date : <span>07/03/2023 à 11:30</span></p>
+                                            <p class="card-text"> Coiffeur: <span>Abdel</span></p>
+                                            <p>
+                                                <button class="btn btn-danger">
+                                                    Annuler
+                                                </button>
 
-                                </card>
+                                                <button class="btn btn-success ml-1" @click='validate()'>
+                                                    Valider
+                                                </button>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
 
                         </div>
@@ -277,17 +297,39 @@
                             },
 
                         ],
+                        times1: {
+                            08: 00,
+                            08: 30,
+                            09: 00,
+                            09: 30,
+                            10: 00,
+                            10: 30,
+                            11: 00,
+                            11: 30,
+                            12: 00,
+                            12: 30
+                        },
+                        times2: {
+                            14: 00,
+                            14: 30,
+                            15: 00,
+                            15: 30,
+                            16: 00,
+                            16: 30,
+                            17: 00,
+                            18: 30
+                        },
                         barber: '',
                         service: '',
                         showServices: false,
                         showCalendar: false,
-                        showBarbers: true,
-                        showSummary: true,
-                        showDay: false
+                        showBarbers: false,
+                        showSummary: false,
+                        showDay: false,
                     }
                 },
                 mounted: function() {
-                    // this.displayServices();
+                    this.displayServices();
                 },
                 methods: {
                     displayServices() {
@@ -313,6 +355,10 @@
                         this.showCalendar = false;
                         this.showBarbers = false;
                         this.showSummary = true;
+                    },
+                    validate() {
+                        alert('Merci de votre réservation');
+                        window.location.replace('index.php');
                     },
                     getImgUrl(pic) {
                         return "public/images/" + pic;
