@@ -13,7 +13,7 @@
             <?php include 'parts/header.php'; ?>
         </section>
 
-        <div class="row mt-2">
+        <div class="row mt-0">
             <div class="hero">
                 <div class="hero__main">
                     <h1>

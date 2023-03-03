@@ -73,7 +73,7 @@ p {
   display: block;
   height: auto;
   margin: 0 auto;
-  background: rgb(219, 214, 214);
+  background: rgb(41, 30, 30);
 }
 .header__top {
   background-color: #1f2022;
@@ -86,12 +86,12 @@ p {
 }
 .header__top .adress-top a {
   margin: auto 10px auto 10px;
-  color: #E0C15B;
+  color: white;
   font-family: "Poppins";
 }
 .header__top .adress-top a i {
   margin: 5px;
-  color: #E0C15B;
+  color: white;
 }
 .header__main {
   width: 100%;
@@ -124,12 +124,12 @@ p {
   margin: 20px;
 }
 .header__main__content .menu li a {
-  color: black;
+  color: white;
   font-weight: bold;
   font-family: "Poppins", sans-serif;
 }
 .header__main__content .menu li a:hover {
-  color: #E0C15B;
+  color: white;
 }
 .header__main .mobile-menu-btn {
   cursor: pointer;
@@ -177,7 +177,7 @@ p {
   margin-left: 0px;
 }
 .header__main .adress .adress-box a {
-  color: #E0C15B;
+  color: white;
   font-weight: 600;
 }
 .header__bottom {
@@ -368,7 +368,7 @@ section .content p {
   background-size: cover;
   margin: 0;
   margin: 0;
-  padding-top: 10px;
+  padding-top: 0;
   background-image: url("../images/image1.jpg");
 }
 .hero__main {
@@ -1910,8 +1910,12 @@ section .content p {
 .footer__content .adress .adress-box strong {
   font-weight: normal;
   font-size: 0.9em;
+  color: white;
 }
 .footer__content .adress .adress-box a {
+  color: white;
+}
+.footer__content .adress .adress-box i {
   color: white;
 }
 
@@ -2669,6 +2673,7 @@ section .content p {
   }
   .adress .adress-box span {
     width: 100%;
+    color: white;
   }
   .about {
     height: auto;
