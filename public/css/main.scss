@@ -169,7 +169,7 @@ p{
         display: block;
         height: auto;
         margin: 0 auto;
-        background: rgb(219, 214, 214);
+        background: rgb(41, 30, 30);
 
         &__top{
             background-color: $black-dark;
@@ -181,12 +181,12 @@ p{
 
                 a{
                     margin: auto 10px auto 10px;
-                    color: $yellow;
+                    color: $white;
                     font-family: 'Poppins';
 
                     i{
                         margin: 5px;
-                        color: $yellow;
+                        color: $white;
                     }
                 }
             }
@@ -220,13 +220,13 @@ p{
                                 margin: 20px;
 
                                 a{
-                                    color: black;
+                                    color: $white;
                                     font-weight: bold;
                                     font-family: 'Poppins', sans-serif;
                                 }
 
                                 a:hover{
-                                    color: $yellow;
+                                    color: $white;
                                 }
                             }
                       }
@@ -282,7 +282,7 @@ p{
                         }
 
                         a{
-                            color: $yellow;
+                            color: $white;
                             font-weight: 600;
                         }
                     }
@@ -459,7 +459,7 @@ p{
     .hero{
         @include hero();
         margin: 0;
-        padding-top: 10px;
+        padding-top: 0;
         background-image: url('../images/image1.jpg');
 
         &__main{
@@ -1975,9 +1975,14 @@ p{
                     strong{
                         font-weight: normal;
                         font-size: 0.9em;
+                        color: $white;
                     }
 
                     a{
+                        color: $white;
+                    }
+
+                    i{
                         color: $white;
                     }
                 }
@@ -2239,6 +2244,43 @@ p{
                             margin: 20px auto;
                             font-size: 1.5em;
                          }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
                         #close{
                             display: table-cell;
@@ -3019,6 +3061,7 @@ p{
         .adress-box{
                 span{
                     width: 100%;
+                    color: $white;
                 }
 
         }
